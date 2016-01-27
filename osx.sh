@@ -1,9 +1,9 @@
 # --
 # Environmental Preferences
 # --
-## Disable drop shadows on screenshots
-defaults write com.apple.screencapture disable-shadow -bool true
-killall SystemUIServer
+## Remove default apps from Dock
+defaults delete com.apple.dock persistent-apps
+killall Dock
 
 # --
 # Directories
